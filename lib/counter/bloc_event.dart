@@ -22,9 +22,5 @@ class ClearInputEvent extends CounterEvent {
 class InputChangedEvent extends CounterEvent {
   final int input;
 
-  InputChangedEvent(
-    int parse, {
-    required super.counterValue,
-    required this.input,
-  });
+  InputChangedEvent({required super.counterValue, required this.input});
 }
